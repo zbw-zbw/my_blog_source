@@ -1,8 +1,8 @@
 # 手把手教你react-hooks
 
 ## 1. useState
-##### useState接收一个参数（状态的初始值）
-##### useState返回值：一个数组 第一项：状态值 第二项：修改状态的方法
+#### useState接收一个参数（状态的初始值）
+#### useState返回值：一个数组 第一项：状态值 第二项：修改状态的方法
 ```js
 import { useState } from "react";
 
@@ -28,11 +28,11 @@ function Demo1() {
 
 export default Demo1;
 ```
-##### 因为每次状态更新，React内部都会重新生成一个useState函数，一次更新对应一个useState函数，所以最新的一次更新只能拿到上次更新完的state值，如果要拿到最新的状态值需要借助下一个hook（useEffect），继续往下看...
+#### 因为每次状态更新，React内部都会重新生成一个useState函数，一次更新对应一个useState函数，所以最新的一次更新只能拿到上次更新完的state值，如果要拿到最新的状态值需要借助下一个hook（useEffect），继续往下看...
 
 ## 2. useEffect
-##### useEffect相当于class组件的三个生命周期，分别是：
-#### （componentDidMount、componentDidUpdate、componentWillUnmount）
+#### useEffect相当于class组件的三个生命周期，分别是：
+### （componentDidMount、componentDidUpdate、componentWillUnmount）
 ```js
 import { useEffect, useState } from "react";
 
@@ -101,8 +101,8 @@ export default Demo2;
 ```
 
 ## 3. useRef
-##### useRef接收一个初始值 它的返回值是一个对象，里面有个current属性{current: ...}
-##### current属性的值就是实时的状态值
+#### useRef接收一个初始值 它的返回值是一个对象，里面有个current属性{current: ...}
+#### current属性的值就是实时的状态值
 
 ```js
 import { useRef } from "react";
@@ -115,7 +115,7 @@ const inputRef = useRef(null);
 ```
 
 ## 4. useContext
-##### useContext需要配合createContext使用
+#### useContext需要配合createContext使用
 
 ```js
 import { useContext, createContext } from "react";
@@ -158,8 +158,8 @@ return (
 
 ## 5. useReducer（redux的思想）
 
-###### useReducer接收两个参数，第一个参数为reducer函数，第二个参数为初始状态
-##### useReducer返回值：第一项为store（即共享状态的集合）第二项dispatch（修改状态的方法）
+##### useReducer接收两个参数，第一个参数为reducer函数，第二个参数为初始状态
+#### useReducer返回值：第一项为store（即共享状态的集合）第二项dispatch（修改状态的方法）
 ```js
 import { useReducer } from "react";
 

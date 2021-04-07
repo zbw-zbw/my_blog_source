@@ -7,7 +7,7 @@
 <h1 class="name">我的名字是：IRVING</h1>
 ```
 
-###### React也跟vue有着Diff算法，它每次render只会更新与上一次渲染不同的节点和内容，所以上面的例子，React只需要这样做：
+##### React也跟vue有着Diff算法，它每次render只会更新与上一次渲染不同的节点和内容，所以上面的例子，React只需要这样做：
 
 `h1.innerText = Kyrie -> h1.innerText = IRVING`
 
@@ -38,7 +38,7 @@ function Demo() {
 `所以，当依赖的状态变得多起来的时候，难免会让我们在性能方面有所担心。`
 
 ## useEffect传入依赖的正确方式？
-###### 现在有个需求：书写一个函数，每秒自动让count+1
+##### 现在有个需求：书写一个函数，每秒自动让count+1
 
 ```js
 function Demo() {
@@ -148,7 +148,7 @@ function Demo() {
 
 ## useMemo和useCallback（性能优化）？
 
-##### useCallback(缓存函数)
+#### useCallback(缓存函数)
 
 ```js
 const memoizedSetCount = useCallback(
@@ -162,7 +162,7 @@ const memoizedSetCount = useCallback(
 `把内联回调函数及依赖项数组作为参数传入useCallback，它将返回该回调函数的缓存版本，该回调函数仅在某个依赖项改变时才会更新。`
 
 
-###### useMemo（缓存值：类似于Vue的计算属性）
+##### useMemo（缓存值：类似于Vue的计算属性）
 
 
 ```js
@@ -173,4 +173,4 @@ const memoizedCount = useMemo(() => {
 
 `把“创建”函数和依赖项数组作为参数传入useMemo，它仅会在某个依赖项改变时才重新计算缓存值。这种优化有助于避免在每次渲染时都进行高开销的计算。`
 
-###### 到这里，useEffect的进阶指南就介绍完了，要更好的运用React hooks 还得日常开发中的实战和积累，相信在往后的开发中，大家能更合理的使用hooks，也可以封装属于个人的hooks...大家加油，一起学习。
+##### 到这里，useEffect的进阶指南就介绍完了，要更好的运用React hooks 还得日常开发中的实战和积累，相信在往后的开发中，大家能更合理的使用hooks，也可以封装属于个人的hooks...大家加油，一起学习。
