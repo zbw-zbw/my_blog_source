@@ -10,7 +10,7 @@ module.exports = {
 	// 页签标题
 	title: "zbw's blog",
 	// meta 中的描述文字，SEO用
-	description: "kyrie wen - 个人博客",
+	description: "zbw - 个人博客",
 	base: "/",
 	// 主题
 	theme: "reco",
@@ -89,9 +89,9 @@ module.exports = {
 		[
 			"dynamic-title",
 			{
-				showIcon: "/favicon.ico",
+				showIcon: "/img/favicon.ico",
 				showText: "(/≧▽≦/)咦！又好了！",
-				hideIcon: "/favicon.ico",
+				hideIcon: "/img/favicon.ico",
 				hideText: "(●—●)喔哟，崩溃啦！",
 				recoverTime: 2000
 			}
@@ -245,11 +245,11 @@ module.exports = {
 			]
 		},
 		// 平滑滚动条
-		smoothScroll: true,
+		// smoothScroll: true,
 		// 作者
 		author: "叫我欧文就好",
 		// 作者头像
-		// authorAvatar: '',
+		authorAvatar: '/img/logo.png',
 		// 开始时间
 		startYear: "2021",
 		// 文档更新时间：每个文件git最后提交的时间
