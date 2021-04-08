@@ -55,10 +55,8 @@ module.exports = {
 		[
 			"dynamic-title",
 			{
-				showIcon: "/favicon.ico",
 				showText: "欢迎回来！",
-				hideIcon: "/failure.ico",
-				hideText: "快回来！网站要崩啦！",
+				hideText: "快回来，网站崩啦！",
 				recoverTime: 2000
 			}
 		],
@@ -209,6 +207,5 @@ module.exports = {
 			]
 		}
 	},
-	base: '.',
-	dest: './dist'
+	base: '/',
 };
