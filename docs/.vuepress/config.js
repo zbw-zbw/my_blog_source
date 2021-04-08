@@ -8,7 +8,7 @@
  */
 module.exports = {
 	// 页签标题
-	title: "zbw's blog",
+	title: "Kyrie wen",
 	// meta 中的描述文字，SEO用
 	description: "zbw - 个人博客",
 	base: "/",
@@ -65,15 +65,6 @@ module.exports = {
 				aplayer: {
 					lrcType: 3
 				}
-			}
-		],
-		[
-			//彩带背景
-			"ribbon",
-			{
-				size: 90,
-				opacity: 0.4,
-				zIndex: -1
 			}
 		],
 		[
@@ -164,7 +155,7 @@ module.exports = {
 		nav: [
 			// 单项 text：显示文字，link：指向链接
 			{
-				text: "个人文章",
+				text: "文章",
 				icon: "reco-coding",
 				items: [
 					{ text: "js", link: "/my-articles/js/Array-methods" },
@@ -174,11 +165,9 @@ module.exports = {
 					{ text: "移动端", link: "/my-articles/h5/wetchat" }
 				]
 			},
-			{ text: "常用的库", icon: "reco-message", link: "/common-libs/" },
-			{ text: "书籍汇总", icon: "reco-message", link: "/books/" },
-			{ text: "刷面试题", icon: "reco-message", link: "/interview-questions/" },
+			{ text: "面试题", icon: "reco-message", link: "/interview-questions/" },
 			{
-				text: "源码剖析",
+				text: "源码",
 				icon: "reco-message",
 				items: [
 					{ text: "vue2", link: "/source-code/vue2" },
@@ -186,7 +175,8 @@ module.exports = {
 					{ text: "react", link: "/source-code/react" }
 				]
 			},
-
+			{ text: "常用库", icon: "reco-message", link: "/common-libs/" },
+			{ text: "书籍", icon: "reco-message", link: "/books/" },
 			{
 				text: "关于作者",
 				icon: "reco-github",
@@ -207,7 +197,9 @@ module.exports = {
 					children: [
 						["/my-articles/js/Array-methods", "15个常用操作数组的方法"],
 						["/my-articles/js/my-format", "封装一个日期格式化函数"],
-						["/my-articles/js/Math.round()", "Math.round()、floor()、ceil()"]
+						["/my-articles/js/Math.round()", "Math.round()、floor()、ceil()"],
+						["/my-articles/js/scope", "彻底搞懂JS中的作用域和闭包"],
+						["/my-articles/js/this", "彻底搞懂JS中的this关键字"]
 					]
 				},
 				{
@@ -249,13 +241,13 @@ module.exports = {
 		// 作者
 		author: "叫我欧文就好",
 		// 作者头像
-		authorAvatar: '/img/logo.png',
+		authorAvatar: "/img/logo.png",
 		// 开始时间
 		startYear: "2021",
 		// 文档更新时间：每个文件git最后提交的时间
-		lastUpdated: "最后更新时间",
+		lastUpdated: "最后更新时间"
 		// 博客设置
 		// type: "blog"
-		logo: "/img/logo.png"
+		// logo: "/img/logo.png"
 	}
 };
