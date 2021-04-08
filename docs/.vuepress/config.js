@@ -17,6 +17,8 @@ module.exports = {
 		["link", { rel: "icon", href: "/img/favicon.ico" }],
 		// 移动栏优化
 		["meta", { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],
+		// 引用css样式
+		["link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" }],
 		// 引入jquery
 		[
 			"script",
