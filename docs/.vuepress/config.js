@@ -8,9 +8,9 @@
  */
 module.exports = {
 	// 页签标题
-	title: "zhang bao wen's blog",
+	title: "zbw's blog",
 	// meta 中的描述文字，SEO用
-	description: "叫我欧文就好 - 个人博客",
+	description: "kyrie wen - 个人博客",
 	base: "/",
 	// 主题
 	theme: "reco",
@@ -21,25 +21,7 @@ module.exports = {
 		// 移动栏优化
 		["meta", { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],
 		// 引用css样式
-		["link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" }],
-		// 引入jquery
-		[
-			"script",
-			{
-				language: "javascript",
-				type: "text/javascript",
-				src: "https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"
-			}
-		],
-		// 引入鼠标点击脚本
-		[
-			"script",
-			{
-				language: "javascript",
-				type: "text/javascript",
-				src: "/js/MouseClickEffect.js"
-			}
-		]
+		["link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" }]
 	],
 	markdown: {
 		// 代码块显示行号
@@ -48,25 +30,84 @@ module.exports = {
 	plugins: [
 		// 标签加强
 		["vuepress-plugin-boxx"],
+		// 右下角宠物
+		[
+			"@vuepress-reco/vuepress-plugin-kan-ban-niang",
+			{
+				theme: [
+					"wanko",
+					"blackCat",
+					"whiteCat",
+					"haru1",
+					"haru2",
+					"haruto",
+					"koharu",
+					"izumi",
+					"shizuku",
+					"miku",
+					"z16"
+				],
+				clean: true,
+				width: 240,
+				height: 352
+			}
+		],
+		// 音乐播放器
+		[
+			"meting",
+			{
+				metingApi: "https://api.i-meto.com/meting/api",
+				meting: {
+					server: "netease",
+					type: "playlist",
+					mid: "621465725"
+				},
+				aplayer: {
+					lrcType: 3
+				}
+			}
+		],
+		[
+			//彩带背景
+			"ribbon",
+			{
+				size: 90,
+				opacity: 0.4,
+				zIndex: -1
+			}
+		],
+		[
+			//鼠标点击特效
+			"cursor-effects",
+			{
+				size: 3,
+				shape: ["star"], // circle
+				zIndex: 9999
+			}
+		],
 		// 动态标题
 		[
 			"dynamic-title",
 			{
-				showText: "欢迎回来！",
-				hideText: "快回来，网站要崩溃啦！",
+				showIcon: "/favicon.ico",
+				showText: "(/≧▽≦/)咦！又好了！",
+				hideIcon: "/favicon.ico",
+				hideText: "(●—●)喔哟，崩溃啦！",
 				recoverTime: 2000
 			}
 		],
-		// 更新刷新插件
+		// 流程图
+		["flowchart"],
 		[
-			"@vuepress/pwa",
+			// 更新刷新插件
+			("@vuepress/pwa",
 			{
 				serviceWorker: true,
 				updatePopup: {
 					message: "发现新文章",
 					buttonText: "立即刷新"
 				}
-			}
+			})
 		],
 		// 代码复制弹窗插件
 		[
@@ -98,39 +139,33 @@ module.exports = {
 				hostname: "https://www.glassysky.site"
 			}
 		],
-		["vuepress-reco/vuepress-plugin-loading-page"],
 		//vuepress公告插件
 		[
 			"@vuepress-yard/vuepress-plugin-window",
 			{
-				title: "联系博主",
+				title: "博客公告",
 				contentInfo: {
-					title: "叫我欧文就好",
+					title: "欢迎进来的朋友(✪ω✪)",
 					needImg: true,
-					imgUrl: "https://static01.imgkr.com/temp/6d1e565860bd4cfea0bb5c00305cdd15.jfif"
+					imgUrl: "https://static01.imgkr.com/temp/6d1e565860bd4cfea0bb5c00305cdd15.jfif",
+					content: "感兴趣的话添加博主微信学习交流"
 				},
 				bottomInfo: {
 					btnText: "GitHub",
 					linkTo: "https://github.com/zbw-zbw"
 				},
-				closeOnce: true,
+				closeOnce: false,
 				delayMount: 1000
 			}
 		]
 	],
 	themeConfig: {
-		smoothScroll: true,
-		// 作者
-		author: '叫我欧文就好',
-		// 备案
-		record: '叫我欧文就好',
-		// 文档更新时间：每个文件git最后提交的时间
-		lastUpdated: "最后更新时间",
 		// 顶部导航栏
 		nav: [
 			// 单项 text：显示文字，link：指向链接
 			{
 				text: "个人文章",
+				icon: "reco-coding",
 				items: [
 					{ text: "js", link: "/my-articles/js/Array-methods" },
 					{ text: "css", link: "/my-articles/css/common-css" },
@@ -139,11 +174,12 @@ module.exports = {
 					{ text: "移动端", link: "/my-articles/h5/wetchat" }
 				]
 			},
-			{ text: "面试题", link: "/interview-questions/" },
-			{ text: "常用库", link: "/common-libs/" },
-			{ text: "书籍收集", link: "/books/" },
+			{ text: "常用的库", icon: "reco-message", link: "/common-libs/" },
+			{ text: "书籍汇总", icon: "reco-message", link: "/books/" },
+			{ text: "刷面试题", icon: "reco-message", link: "/interview-questions/" },
 			{
-				text: "学习源码",
+				text: "源码剖析",
+				icon: "reco-message",
 				items: [
 					{ text: "vue2", link: "/source-code/vue2" },
 					{ text: "vue3", link: "/source-code/vue3" },
@@ -153,6 +189,7 @@ module.exports = {
 
 			{
 				text: "关于作者",
+				icon: "reco-github",
 				items: [
 					{ text: "掘金", link: "https://juejin.cn/user/1239904848718135" },
 					{ text: "思否", link: "https://segmentfault.com/u/jiaowoouwenjiuhao" },
@@ -206,6 +243,19 @@ module.exports = {
 				["/source-code/vue3", "Vue3源码"],
 				["/source-code/react", "react源码"]
 			]
-		}
+		},
+		// 平滑滚动条
+		smoothScroll: true,
+		// 作者
+		author: "叫我欧文就好",
+		// 作者头像
+		// authorAvatar: '',
+		// 开始时间
+		startYear: "2021",
+		// 文档更新时间：每个文件git最后提交的时间
+		lastUpdated: "最后更新时间",
+		// 博客设置
+		// type: "blog"
+		logo: "/img/logo.png"
 	}
 };

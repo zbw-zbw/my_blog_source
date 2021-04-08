@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @vuepress/pwa
+  C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @vuepress-plugin-meting
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Administrator\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;D:\phpstudy_pro\Extensions\php\php7.1.9nts;D:\phpstudy_pro\Extensions\composer1.8.5;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\JetBrains\WebStorm 2020.3\bin
@@ -14,8 +14,8 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.npm.taobao.org/@vuepress%2fpwa: Not found
-      at Request.params.callback [as _callback] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
+  Error: https://registry.npm.taobao.org/@vuepress-plugin-meting: Request "https://registry.npm.taobao.org/@vuepress-plugin-meting" returned a 405
+      at Request.params.callback [as _callback] (C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66997:18)
       at Request.self.callback (C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
       at Request.emit (events.js:315:20)
       at Request.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
@@ -32,6 +32,7 @@ npm manifest:
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
+    "description": "kyriewen的个人博客",
     "scripts": {
       "docs:dev": "vuepress dev docs",
       "docs:build": "vuepress build docs",
@@ -39,10 +40,18 @@ npm manifest:
     },
     "devDependencies": {
       "vuepress": "^1.8.2",
+      "vuepress-plugin-dynamic-title": "^1.0.0",
       "vuepress-theme-reco": "^1.6.6"
     },
     "dependencies": {
-      "vuepress-plugin-nuggets-style-copy": "^1.0.3"
+      "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.3",
+      "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+      "@vuepress/plugin-medium-zoom": "^1.5.2",
+      "vuepress-plugin-boxx": "^0.0.7",
+      "vuepress-plugin-cursor-effects": "^1.0.2",
+      "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+      "vuepress-plugin-ribbon": "^1.0.4",
+      "vuepress-plugin-sitemap": "^2.3.1"
     }
   }
 
@@ -1253,6 +1262,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-back-to-top/-/vuepress-plugin-back-to-top-1.6.0.tgz#16cf1a6844f156c11d5135c646270c6734263eb6"
     integrity sha512-BCEv+d6UwNnI7njQx54XcsKdBvHKkp+JmyKnrxcRltyR8OAIW4qf1PQC0Ypp1GHMAL4fFgbUc9/eeAkvMPgYkg==
   
+  "@vuepress-reco/vuepress-plugin-bgm-player@^1.1.3":
+    version "1.1.3"
+    resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-bgm-player/download/@vuepress-reco/vuepress-plugin-bgm-player-1.1.3.tgz#47e1142908dfc7341c6507a8f1b71f14a357ab3e"
+    integrity sha1-R+EUKQjfxzQcZQeo8bcfFKNXqz4=
+  
   "@vuepress-reco/vuepress-plugin-comments@^1.6.0":
     version "1.6.0"
     resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-comments/-/vuepress-plugin-comments-1.6.0.tgz#df9fb43ce032d429b4c6defcaef461420593f69f"
@@ -1266,10 +1280,15 @@ Lockfile:
       valine "^1.4.14"
       vssue "^1.4.6"
   
+  "@vuepress-reco/vuepress-plugin-kan-ban-niang@^1.0.5":
+    version "1.0.5"
+    resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-kan-ban-niang/download/@vuepress-reco/vuepress-plugin-kan-ban-niang-1.0.5.tgz#73b47094f1a07af05923fe9ae6c25a4c33586168"
+    integrity sha1-c7RwlPGgevBZI/6a5sJaTDNYYWg=
+  
   "@vuepress-reco/vuepress-plugin-loading-page@^1.6.0":
     version "1.6.0"
-    resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-loading-page/-/vuepress-plugin-loading-page-1.6.0.tgz#34b72ed342dc9b15021d077ff8faeafe52146159"
-    integrity sha512-yz/KbBq+CY8zxSkeTWHmKB7piFhSQxb9YD07Q9LDjszggL+nW2E5Lipsskay7OTIBQnlGNfSaukAqAJQp6NDug==
+    resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-loading-page/download/@vuepress-reco/vuepress-plugin-loading-page-1.6.0.tgz#34b72ed342dc9b15021d077ff8faeafe52146159"
+    integrity sha1-NLcu00LcmxUCHQd/+Prq/lIUYVk=
   
   "@vuepress-reco/vuepress-plugin-pagation@^1.6.0":
     version "1.6.0"
@@ -1374,6 +1393,13 @@ Lockfile:
     version "1.5.0"
     resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.5.0.tgz#99a574f6c52570ae16be3de529bdc556d09f88fe"
     integrity sha512-9Q1C11Ga/GL3fc+GiwaOZ+I0lWT2Ilrd1OKzJ6iJTZ5F4Ays+NzdIPBo5LeIT6/7eu08Z9XBhW0mQTa6Aq/DhQ==
+    dependencies:
+      medium-zoom "^1.0.4"
+  
+  "@vuepress/plugin-medium-zoom@^1.5.2":
+    version "1.8.2"
+    resolved "https://registry.npm.taobao.org/@vuepress/plugin-medium-zoom/download/@vuepress/plugin-medium-zoom-1.8.2.tgz#0243dd27edf0c710f9a41a234d253d76ab51e625"
+    integrity sha1-AkPdJ+3wxxD5pBojTSU9dqtR5iU=
     dependencies:
       medium-zoom "^1.0.4"
   
@@ -8420,6 +8446,11 @@ Lockfile:
       toposort "^1.0.0"
       util.promisify "1.0.0"
   
+  vuepress-plugin-boxx@^0.0.7:
+    version "0.0.7"
+    resolved "https://registry.npm.taobao.org/vuepress-plugin-boxx/download/vuepress-plugin-boxx-0.0.7.tgz#8337d27eaf5b3f609eb7befdb3681ce5f0eac17c"
+    integrity sha1-gzfSfq9bP2Cet779s2gc5fDqwXw=
+  
   vuepress-plugin-container@^2.0.2:
     version "2.1.5"
     resolved "https://registry.yarnpkg.com/vuepress-plugin-container/-/vuepress-plugin-container-2.1.5.tgz#37fff05662fedbd63ffd3a5463b2592c7a7f3133"
@@ -8428,12 +8459,22 @@ Lockfile:
       "@vuepress/shared-utils" "^1.2.0"
       markdown-it-container "^2.0.0"
   
+  vuepress-plugin-cursor-effects@^1.0.2:
+    version "1.0.2"
+    resolved "https://registry.npm.taobao.org/vuepress-plugin-cursor-effects/download/vuepress-plugin-cursor-effects-1.0.2.tgz#88154c5f049139dec7c26fa75e45cea115d90300"
+    integrity sha1-iBVMXwSROd7Hwm+nXkXOoRXZAwA=
+  
   vuepress-plugin-disqus@^0.2.0:
     version "0.2.0"
     resolved "https://registry.yarnpkg.com/vuepress-plugin-disqus/-/vuepress-plugin-disqus-0.2.0.tgz#0a5bde424f81e0185eda36fba23d7ac4cae6ff07"
     integrity sha512-kx+AeVzjJ9lx9bufLt1/X35V1VXfnQ1srkDMIzFKD9NyQ3eycsWQRcGO1dFe1HMrY3+7fTu+1/JeUEUEpGZ5tw==
     dependencies:
       vue-disqus "^3.0.5"
+  
+  vuepress-plugin-dynamic-title@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.npm.taobao.org/vuepress-plugin-dynamic-title/download/vuepress-plugin-dynamic-title-1.0.0.tgz#867e7a8b821ad35ccfaaafc2358bc129817d422f"
+    integrity sha1-hn56i4Ia01zPqq/CNYvBKYF9Qi8=
   
   vuepress-plugin-feed@^0.1.8:
     version "0.1.9"
@@ -8463,10 +8504,15 @@ Lockfile:
     dependencies:
       clipboard "^2.0.4"
   
+  vuepress-plugin-ribbon@^1.0.4:
+    version "1.0.4"
+    resolved "https://registry.npm.taobao.org/vuepress-plugin-ribbon/download/vuepress-plugin-ribbon-1.0.4.tgz#5a35311f76ebde1c01f0113ed24ccd5f46432bae"
+    integrity sha1-WjUxH3br3hwB8BE+0kzNX0ZDK64=
+  
   vuepress-plugin-sitemap@^2.3.1:
     version "2.3.1"
-    resolved "https://registry.yarnpkg.com/vuepress-plugin-sitemap/-/vuepress-plugin-sitemap-2.3.1.tgz#51298aca77a5de96396fdbd1103e1637dd61ae6a"
-    integrity sha512-n+8lbukhrKrsI9H/EX0EBgkE1pn85LAQFvQ5dIvrZP4Kz6JxPOPPNTQmZMhahQV1tXbLZQCEN7A1WZH4x+arJQ==
+    resolved "https://registry.npm.taobao.org/vuepress-plugin-sitemap/download/vuepress-plugin-sitemap-2.3.1.tgz#51298aca77a5de96396fdbd1103e1637dd61ae6a"
+    integrity sha1-USmKynel3pY5b9vRED4WN91hrmo=
     dependencies:
       sitemap "^3.0.0"
   

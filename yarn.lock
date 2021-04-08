@@ -1208,8 +1208,8 @@
 
 "@vuepress-reco/vuepress-plugin-comments@^1.6.0":
   version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-comments/-/vuepress-plugin-comments-1.6.0.tgz#df9fb43ce032d429b4c6defcaef461420593f69f"
-  integrity sha512-L6ppzOHGv/Fqrs68mmF2ubYkWoINR3lsCocIeyPqPIaBO6joGS6QX1focm0Fwa6pG7mvzSdVn7dTUS5+wJ9hxQ==
+  resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-comments/download/@vuepress-reco/vuepress-plugin-comments-1.6.0.tgz#df9fb43ce032d429b4c6defcaef461420593f69f"
+  integrity sha1-35+0POAy1Cm0xt78rvRhQgWT9p8=
   dependencies:
     "@vssue/api-bitbucket-v2" "^1.1.1"
     "@vssue/api-gitee-v5" "^1.4.4"
@@ -1218,6 +1218,11 @@
     "@vssue/api-gitlab-v4" "^1.1.1"
     valine "^1.4.14"
     vssue "^1.4.6"
+
+"@vuepress-reco/vuepress-plugin-kan-ban-niang@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.npm.taobao.org/@vuepress-reco/vuepress-plugin-kan-ban-niang/download/@vuepress-reco/vuepress-plugin-kan-ban-niang-1.0.5.tgz#73b47094f1a07af05923fe9ae6c25a4c33586168"
+  integrity sha1-c7RwlPGgevBZI/6a5sJaTDNYYWg=
 
 "@vuepress-reco/vuepress-plugin-loading-page@^1.6.0":
   version "1.6.0"
@@ -1228,11 +1233,6 @@
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-pagation/-/vuepress-plugin-pagation-1.6.0.tgz#c632aae1638ff9c67fe58c39ab617132be9eeecb"
   integrity sha512-QvmAqfbCnkvdLU0/yZWkFrL/PJgKhciB3FWgJu756FH66iqO/QKDPaZ1vlzI3RfYOIEwLEhPd1U9Rvt9ICaQtQ==
-
-"@vuepress-yard/vuepress-plugin-window@^1.0.10":
-  version "1.0.10"
-  resolved "https://registry.npm.taobao.org/@vuepress-yard/vuepress-plugin-window/download/@vuepress-yard/vuepress-plugin-window-1.0.10.tgz#8ae3507136855866a6c26eb20bf8334fc0f1a9b3"
-  integrity sha1-iuNQcTaFWGamwm6yC/gzT8DxqbM=
 
 "@vuepress/core@1.8.2":
   version "1.8.2"
@@ -3527,6 +3527,11 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
+eve-raphael@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.npm.taobao.org/eve-raphael/download/eve-raphael-0.5.0.tgz#17c754b792beef3fa6684d79cf5a47c63c4cda30"
+  integrity sha1-F8dUt5K+7z+maE15z1pHxjxM2jA=
+
 event-target-shim@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
@@ -3812,6 +3817,13 @@ find-up@^4.0.0:
   dependencies:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
+
+flowchart.js@^1.11.3:
+  version "1.15.0"
+  resolved "https://registry.npm.taobao.org/flowchart.js/download/flowchart.js-1.15.0.tgz#132ba2df14af0a65e67280026ef05a1ffd16569f"
+  integrity sha1-Eyui3xSvCmXmcoACbvBaH/0WVp8=
+  dependencies:
+    raphael "2.3.0"
 
 flush-write-stream@^1.0.0:
   version "1.1.1"
@@ -6758,6 +6770,13 @@ range-parser@^1.2.1, range-parser@~1.2.1:
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
 
+raphael@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npm.taobao.org/raphael/download/raphael-2.3.0.tgz#eabeb09dba861a1d4cee077eaafb8c53f3131f89"
+  integrity sha1-6r6wnbqGGh1M7gd+qvuMU/MTH4k=
+  dependencies:
+    eve-raphael "0.5.0"
+
 raw-body@2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.4.0.tgz#a1ce6fb9c9bc356ca52e89256ab59059e13d0332"
@@ -8398,6 +8417,11 @@ vuepress-plugin-container@^2.0.2:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
 
+vuepress-plugin-cursor-effects@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-cursor-effects/download/vuepress-plugin-cursor-effects-1.0.2.tgz#88154c5f049139dec7c26fa75e45cea115d90300"
+  integrity sha1-iBVMXwSROd7Hwm+nXkXOoRXZAwA=
+
 vuepress-plugin-disqus@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-disqus/-/vuepress-plugin-disqus-0.2.0.tgz#0a5bde424f81e0185eda36fba23d7ac4cae6ff07"
@@ -8423,6 +8447,13 @@ vuepress-plugin-feed@^0.1.8:
     remove-markdown "0.3.0"
     striptags "3.1.1"
 
+vuepress-plugin-flowchart@^1.4.3:
+  version "1.4.3"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-flowchart/download/vuepress-plugin-flowchart-1.4.3.tgz#1692807257c9ba02f764ced0caf930c627f65bdb"
+  integrity sha1-FpKAclfJugL3ZM7Qyvkwxif2W9s=
+  dependencies:
+    flowchart.js "^1.11.3"
+
 vuepress-plugin-mailchimp@^1.4.1:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-mailchimp/-/vuepress-plugin-mailchimp-1.4.2.tgz#373fa1df8f03a8993817b09ddfb8bd9d04a1c665"
@@ -8437,6 +8468,11 @@ vuepress-plugin-nuggets-style-copy@^1.0.3:
   integrity sha1-Oju1fATH2exYr9k/89uLYQJXS7g=
   dependencies:
     clipboard "^2.0.4"
+
+vuepress-plugin-ribbon@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-ribbon/download/vuepress-plugin-ribbon-1.0.4.tgz#5a35311f76ebde1c01f0113ed24ccd5f46432bae"
+  integrity sha1-WjUxH3br3hwB8BE+0kzNX0ZDK64=
 
 vuepress-plugin-sitemap@^2.3.1:
   version "2.3.1"
