@@ -11,6 +11,8 @@ module.exports = {
 	title: "zhang bao wen's blog",
 	// meta 中的描述文字，意义不大，SEO用
 	description: "叫我欧文就好 - 个人博客",
+	// 备案号
+	record: " 叫我欧文就好",
 	// 注入到当前页面的 HTML <head> 中的标签
 	head: [
 		// 增加一个自定义的 favicon(网页标签的图标)
@@ -52,16 +54,13 @@ module.exports = {
 		// 动态标题
 		[
 			"dynamic-title",
-			[
-				"dynamic-title",
-				{
-					showIcon: "/favicon.ico",
-					showText: "(/≧▽≦/)咦！又好了！",
-					hideIcon: "/failure.ico",
-					hideText: "(●—●)喔哟，崩溃啦！",
-					recoverTime: 2000
-				}
-			]
+			{
+				showIcon: "/favicon.ico",
+				showText: "欢迎回来！",
+				hideIcon: "/failure.ico",
+				hideText: "快回来！网站要崩啦！",
+				recoverTime: 2000
+			}
 		],
 		// 更新刷新插件
 		[
@@ -82,6 +81,45 @@ module.exports = {
 				tip: {
 					content: "复制成功！"
 				}
+			}
+		],
+		[
+			//图片放大插件
+			"@vuepress/plugin-medium-zoom",
+			{
+				selector: ".page img",
+				delay: 1000,
+				options: {
+					margin: 24,
+					background: "rgba(25,18,25,0.9)",
+					scrollOffset: 40
+				}
+			}
+		],
+		[
+			//插件广场的sitemap插件
+			"sitemap",
+			{
+				hostname: "https://www.glassysky.site"
+			}
+		],
+		["vuepress-reco/vuepress-plugin-loading-page"],
+		//vuepress公告插件
+		[
+			"@vuepress-yard/vuepress-plugin-window",
+			{
+				title: "联系博主",
+				contentInfo: {
+					title: "叫我欧文就好",
+					needImg: true,
+					imgUrl: "https://static01.imgkr.com/temp/6d1e565860bd4cfea0bb5c00305cdd15.jfif"
+				},
+				bottomInfo: {
+					btnText: "GitHub",
+					linkTo: "https://github.com/zbw-zbw"
+				},
+				closeOnce: true,
+				delayMount: 1000
 			}
 		]
 	],

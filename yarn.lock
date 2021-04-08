@@ -1224,6 +1224,11 @@
   resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-pagation/-/vuepress-plugin-pagation-1.6.0.tgz#c632aae1638ff9c67fe58c39ab617132be9eeecb"
   integrity sha512-QvmAqfbCnkvdLU0/yZWkFrL/PJgKhciB3FWgJu756FH66iqO/QKDPaZ1vlzI3RfYOIEwLEhPd1U9Rvt9ICaQtQ==
 
+"@vuepress-yard/vuepress-plugin-window@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.npm.taobao.org/@vuepress-yard/vuepress-plugin-window/download/@vuepress-yard/vuepress-plugin-window-1.0.10.tgz#8ae3507136855866a6c26eb20bf8334fc0f1a9b3"
+  integrity sha1-iuNQcTaFWGamwm6yC/gzT8DxqbM=
+
 "@vuepress/core@1.8.2":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@vuepress/core/-/core-1.8.2.tgz#4f5bafc894691bfea4146294a582a129483daf2a"
@@ -8423,8 +8428,8 @@ vuepress-plugin-nuggets-style-copy@^1.0.3:
 
 vuepress-plugin-sitemap@^2.3.1:
   version "2.3.1"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-sitemap/-/vuepress-plugin-sitemap-2.3.1.tgz#51298aca77a5de96396fdbd1103e1637dd61ae6a"
-  integrity sha512-n+8lbukhrKrsI9H/EX0EBgkE1pn85LAQFvQ5dIvrZP4Kz6JxPOPPNTQmZMhahQV1tXbLZQCEN7A1WZH4x+arJQ==
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-sitemap/download/vuepress-plugin-sitemap-2.3.1.tgz#51298aca77a5de96396fdbd1103e1637dd61ae6a"
+  integrity sha1-USmKynel3pY5b9vRED4WN91hrmo=
   dependencies:
     sitemap "^3.0.0"
 
