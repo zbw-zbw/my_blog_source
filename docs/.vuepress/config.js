@@ -208,5 +208,7 @@ module.exports = {
 				["/source-code/react", "react源码"]
 			]
 		}
-	}
+	},
+	base: '.',
+	dest: './dist'
 };
