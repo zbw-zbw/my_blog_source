@@ -8,13 +8,33 @@
  */
 module.exports = {
 	// 页签标题
-	title: "Kyrie Wen's Blog",
+	title: "zhang bao wen's blog",
 	// meta 中的描述文字，意义不大，SEO用
-	description: "Kyrie Wen - 个人博客",
+	description: "叫我欧文就好 - 个人博客",
 	// 注入到当前页面的 HTML <head> 中的标签
 	head: [
 		// 增加一个自定义的 favicon(网页标签的图标)
-		["link", { rel: "icon", href: "/img/favicon.ico" }]
+		["link", { rel: "icon", href: "/img/favicon.ico" }],
+		// 移动栏优化
+		["meta", { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],
+		// 引入jquery
+		[
+			"script",
+			{
+				language: "javascript",
+				type: "text/javascript",
+				src: "https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"
+			}
+		],
+		// 引入鼠标点击脚本
+		[
+			"script",
+			{
+				language: "javascript",
+				type: "text/javascript",
+				src: "/js/MouseClickEffect.js"
+			}
+		]
 	],
 	// 这是部署到github相关的配置
 	base: "/kyriewen-blog/",
@@ -24,6 +44,45 @@ module.exports = {
 	},
 	// 主题
 	theme: "reco",
+	plugins: [
+		// 标签加强
+		["vuepress-plugin-boxx"],
+		// 动态标题
+		[
+			"dynamic-title",
+			[
+				"dynamic-title",
+				{
+					showIcon: "/favicon.ico",
+					showText: "(/≧▽≦/)咦！又好了！",
+					hideIcon: "/failure.ico",
+					hideText: "(●—●)喔哟，崩溃啦！",
+					recoverTime: 2000
+				}
+			]
+		],
+		// 更新刷新插件
+		[
+			"@vuepress/pwa",
+			{
+				serviceWorker: true,
+				updatePopup: {
+					message: "发现新文章",
+					buttonText: "立即刷新"
+				}
+			}
+		],
+		// 代码复制弹窗插件
+		[
+			"vuepress-plugin-nuggets-style-copy",
+			{
+				copyText: "复制代码",
+				tip: {
+					content: "复制成功！"
+				}
+			}
+		]
+	],
 	themeConfig: {
 		smoothScroll: true,
 		// 文档更新时间：每个文件git最后提交的时间,

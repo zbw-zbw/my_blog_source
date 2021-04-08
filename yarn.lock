@@ -2441,6 +2441,15 @@ clipboard@^2.0.0:
     select "^1.1.2"
     tiny-emitter "^2.0.0"
 
+clipboard@^2.0.4:
+  version "2.0.8"
+  resolved "https://registry.npm.taobao.org/clipboard/download/clipboard-2.0.8.tgz?cache=0&sync_timestamp=1615409953598&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fclipboard%2Fdownload%2Fclipboard-2.0.8.tgz#ffc6c103dd2967a83005f3f61976aa4655a4cdba"
+  integrity sha1-/8bBA90pZ6gwBfP2GXaqRlWkzbo=
+  dependencies:
+    good-listener "^1.2.2"
+    select "^1.1.2"
+    tiny-emitter "^2.0.0"
+
 cliui@^3.0.3:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-3.2.0.tgz#120601537a916d29940f934da3b48d585a39213d"
@@ -8359,6 +8368,11 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
+vuepress-plugin-boxx@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-boxx/download/vuepress-plugin-boxx-0.0.7.tgz#8337d27eaf5b3f609eb7befdb3681ce5f0eac17c"
+  integrity sha1-gzfSfq9bP2Cet779s2gc5fDqwXw=
+
 vuepress-plugin-container@^2.0.2:
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-container/-/vuepress-plugin-container-2.1.5.tgz#37fff05662fedbd63ffd3a5463b2592c7a7f3133"
@@ -8373,6 +8387,11 @@ vuepress-plugin-disqus@^0.2.0:
   integrity sha512-kx+AeVzjJ9lx9bufLt1/X35V1VXfnQ1srkDMIzFKD9NyQ3eycsWQRcGO1dFe1HMrY3+7fTu+1/JeUEUEpGZ5tw==
   dependencies:
     vue-disqus "^3.0.5"
+
+vuepress-plugin-dynamic-title@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-dynamic-title/download/vuepress-plugin-dynamic-title-1.0.0.tgz#867e7a8b821ad35ccfaaafc2358bc129817d422f"
+  integrity sha1-hn56i4Ia01zPqq/CNYvBKYF9Qi8=
 
 vuepress-plugin-feed@^0.1.8:
   version "0.1.9"
@@ -8394,6 +8413,13 @@ vuepress-plugin-mailchimp@^1.4.1:
   dependencies:
     jsonp "^0.2.1"
     query-string "^6.9.0"
+
+vuepress-plugin-nuggets-style-copy@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-nuggets-style-copy/download/vuepress-plugin-nuggets-style-copy-1.0.3.tgz#3a3bb57c04c7d9ec58afd93ff3db8b6102574bb8"
+  integrity sha1-Oju1fATH2exYr9k/89uLYQJXS7g=
+  dependencies:
+    clipboard "^2.0.4"
 
 vuepress-plugin-sitemap@^2.3.1:
   version "2.3.1"
