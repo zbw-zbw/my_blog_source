@@ -9,10 +9,11 @@
 module.exports = {
 	// 页签标题
 	title: "zhang bao wen's blog",
-	// meta 中的描述文字，意义不大，SEO用
+	// meta 中的描述文字，SEO用
 	description: "叫我欧文就好 - 个人博客",
-	// 备案号
-	record: " 叫我欧文就好",
+	base: "/",
+	// 主题
+	theme: "reco",
 	// 注入到当前页面的 HTML <head> 中的标签
 	head: [
 		// 增加一个自定义的 favicon(网页标签的图标)
@@ -40,14 +41,10 @@ module.exports = {
 			}
 		]
 	],
-	// 这是部署到github相关的配置
-	base: "/kyriewen-blog/",
 	markdown: {
 		// 代码块显示行号
 		lineNumbers: true
 	},
-	// 主题
-	theme: "reco",
 	plugins: [
 		// 标签加强
 		["vuepress-plugin-boxx"],
@@ -56,7 +53,7 @@ module.exports = {
 			"dynamic-title",
 			{
 				showText: "欢迎回来！",
-				hideText: "快回来，网站崩啦！",
+				hideText: "快回来，网站要崩溃啦！",
 				recoverTime: 2000
 			}
 		],
@@ -123,8 +120,12 @@ module.exports = {
 	],
 	themeConfig: {
 		smoothScroll: true,
-		// 文档更新时间：每个文件git最后提交的时间,
-		lastUpdated: "Last Updated",
+		// 作者
+		author: '叫我欧文就好',
+		// 备案
+		record: '叫我欧文就好',
+		// 文档更新时间：每个文件git最后提交的时间
+		lastUpdated: "最后更新时间",
 		// 顶部导航栏
 		nav: [
 			// 单项 text：显示文字，link：指向链接
@@ -206,6 +207,5 @@ module.exports = {
 				["/source-code/react", "react源码"]
 			]
 		}
-	},
-	base: '/',
+	}
 };
