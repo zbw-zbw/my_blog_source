@@ -1,5 +1,3 @@
-# 手把手教你react-hooks
-
 ## 1. useState
 #### useState接收一个参数（状态的初始值）
 #### useState返回值：一个数组 第一项：状态值 第二项：修改状态的方法

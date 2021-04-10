@@ -8,7 +8,7 @@
  */
 module.exports = {
 	// 页签标题
-	title: "Kyrie wen",
+	title: "Kyrie Wen",
 	// meta 中的描述文字，SEO用
 	description: "欢迎来到 zbw - 个人博客",
 	base: "/",
@@ -158,7 +158,7 @@ module.exports = {
 				text: "文章",
 				icon: "reco-coding",
 				items: [
-					{ text: "js", link: "/my-articles/js/Array-methods" },
+					{ text: "js", link: "/my-articles/js/array-methods" },
 					{ text: "css", link: "/my-articles/css/common-css" },
 					{ text: "vue", link: "/my-articles/vue/vue3(1)" },
 					{ text: "react", link: "/my-articles/react/react-hooks" },
@@ -194,9 +194,10 @@ module.exports = {
 					title: "js",
 					collabsable: true,
 					children: [
-						["/my-articles/js/Array-methods", "15个常用操作数组的方法"],
+						["/my-articles/js/array-methods", "15个常用操作数组的方法"],
 						["/my-articles/js/my-format", "封装一个日期格式化函数"],
 						["/my-articles/js/Math.round()", "Math.round()、floor()、ceil()"],
+						["/my-articles/js/types", "深入理解JavaScript中的类型"],
 						["/my-articles/js/scope", "彻底搞懂JS中的作用域和闭包"],
 						["/my-articles/js/this", "彻底搞懂JS中的this关键字"]
 					]
