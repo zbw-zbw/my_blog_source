@@ -10,7 +10,7 @@ module.exports = {
 	// 页签标题
 	title: "Kyrie wen",
 	// meta 中的描述文字，SEO用
-	description: "zbw - 个人博客",
+	description: "欢迎来到 zbw - 个人博客",
 	base: "/",
 	// 主题
 	theme: "reco",
@@ -183,7 +183,6 @@ module.exports = {
 				items: [
 					{ text: "掘金", link: "https://juejin.cn/user/1239904848718135" },
 					{ text: "思否", link: "https://segmentfault.com/u/jiaowoouwenjiuhao" },
-					{ text: "CSDN", link: "https://blog.csdn.net/weixin_47352287?spm=1010.2135.3001.5343" },
 					{ text: "GitHub", link: "https://github.com/zbw-zbw" }
 				]
 			}
@@ -237,11 +236,11 @@ module.exports = {
 			]
 		},
 		// 平滑滚动条
-		// smoothScroll: true,
+		smoothScroll: true,
 		// 作者
 		author: "叫我欧文就好",
 		// 作者头像
-		authorAvatar: "/img/logo.png",
+		// authorAvatar: "/img/logo.png",
 		// 开始时间
 		startYear: "2021",
 		// 文档更新时间：每个文件git最后提交的时间
