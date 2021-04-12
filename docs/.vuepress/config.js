@@ -198,8 +198,9 @@ module.exports = {
 						["/my-articles/js/my-format", "封装一个日期格式化函数"],
 						["/my-articles/js/Math.round()", "Math.round()、floor()、ceil()"],
 						["/my-articles/js/types", "深入理解JavaScript中的类型"],
+						["/my-articles/js/values", "深入理解JavaScript中的值"],
 						["/my-articles/js/scope", "彻底搞懂JS中的作用域和闭包"],
-						["/my-articles/js/this", "彻底搞懂JS中的this关键字"]
+						["/my-articles/js/this", "彻底搞懂JS中的this关键字"],
 					]
 				},
 				{
