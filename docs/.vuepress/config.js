@@ -154,27 +154,9 @@ module.exports = {
 		// 顶部导航栏
 		nav: [
 			// 单项 text：显示文字，link：指向链接
-			{
-				text: "文章",
-				icon: "reco-coding",
-				items: [
-					{ text: "js", link: "/my-articles/js/array-methods" },
-					{ text: "css", link: "/my-articles/css/common-css" },
-					{ text: "vue", link: "/my-articles/vue/vue3(1)" },
-					{ text: "react", link: "/my-articles/react/react-hooks" },
-					{ text: "移动端", link: "/my-articles/h5/wetchat" }
-				]
-			},
-			{ text: "面试题", icon: "reco-message", link: "/interview-questions/" },
-			{
-				text: "源码",
-				icon: "reco-message",
-				items: [
-					{ text: "vue2", link: "/source-code/vue2" },
-					{ text: "vue3", link: "/source-code/vue3" },
-					{ text: "react", link: "/source-code/react" }
-				]
-			},
+			{ text: "文章", icon: "reco-coding", link: "/my-articles/js/array-methods" },
+			{ text: "面试题", icon: "reco-message", link: "/interview-questions/js/1" },
+			{ text: "源码", icon: "reco-message", link: "/source-code/vue2" },
 			{ text: "常用库", icon: "reco-message", link: "/common-libs/" },
 			{ text: "书籍", icon: "reco-message", link: "/books/" },
 			{
@@ -200,7 +182,7 @@ module.exports = {
 						["/my-articles/js/types", "深入理解JavaScript中的类型"],
 						["/my-articles/js/values", "深入理解JavaScript中的值"],
 						["/my-articles/js/scope", "彻底搞懂JS中的作用域和闭包"],
-						["/my-articles/js/this", "彻底搞懂JS中的this关键字"],
+						["/my-articles/js/this", "彻底搞懂JS中的this关键字"]
 					]
 				},
 				{
@@ -231,12 +213,21 @@ module.exports = {
 					children: [["/my-articles/h5/wetchat", "你一定踩过的微信H5的坑"]]
 				}
 			],
+			"/interview-questions/": [
+				{
+					title: "js",
+					collabsable: true,
+					children: [["/interview-questions/js/1", "10道JS高频面试题"]]
+				}
+			],
 			"/source-code/": [
-				["/source-code/vue2", "Vue2源码"],
-				["/source-code/vue3", "Vue3源码"],
-				["/source-code/react", "react源码"]
+				["/source-code/vue2", "vue2"],
+				["/source-code/vue3", "vue3"],
+				["/source-code/react", "react"]
 			]
 		},
+		// 子侧边栏
+		subSidebar: "auto",
 		// 平滑滚动条
 		smoothScroll: true,
 		// 作者

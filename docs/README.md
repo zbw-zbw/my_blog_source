@@ -4,7 +4,7 @@ heroImage: /img/logo.gif
 heroText: 叫我欧文就好
 tagline: 一个前端菜鸟的进阶之路
 actionText: 前往阅读 →
-actionLink: /my-articles/js/Array-methods
+actionLink: /my-articles/js/array-methods
 features:
 - title: 文章
   details: 工作之余写下的一篇篇文章，提高个人对知识的总结能力...
