@@ -234,6 +234,8 @@ module.exports = {
 		author: "叫我欧文就好",
 		// 作者头像
 		// authorAvatar: "/img/logo.png",
+		// 备案
+		record: "粤ICP备2021052584号",
 		// 开始时间
 		startYear: "2021",
 		// 文档更新时间：每个文件git最后提交的时间
